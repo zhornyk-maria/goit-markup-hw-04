@@ -519,7 +519,8 @@ img {
   gap: 16px;
 }
 
-.social-link-footer:hover {
+.social-link-footer:hover,
+.social-link-footer:focus {
   background-color: #31d0aa;
   fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
