@@ -115,7 +115,7 @@ img {
   color: #404bbf;
 }
 
-.header-menu-link::after {
+.header-menu-link.active::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -128,8 +128,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu-link:hover::after,
-.header-menu-link:focus::after {
+.header-menu-link.active:hover::after,
+.header-menu-link.active:focus::after {
   background-color: #404bbf;
 }
 
@@ -237,7 +237,7 @@ img {
   border: 1px solid #8e8f99;
   background-color: #f4f4fd;
   max-width: 264px;
-  padding: 24px 0;
+  height: 112px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,10 +247,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
-  margin-bottom: 8px;
 }
 
 .strategy-list {
